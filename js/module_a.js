@@ -1,4 +1,4 @@
-define("moduleA", function() {
+define(function() {
     console.log("module-a called");
     var ModuleA = function() {
         this.name = 'module_a';
@@ -7,6 +7,6 @@ define("moduleA", function() {
         display: function() {
             console.log(this.name, 'displayed');
         }
-    }
+    };
     return ModuleA;
 });

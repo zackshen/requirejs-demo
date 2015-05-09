@@ -12,14 +12,19 @@ module.exports = function(grunt) {
         options: {
           baseUrl: "js/",
           mainConfigFile: "js/config.js",
-          name: "module",
-          out: "dist/module.js"
+          name: "lib",
+          optimize:"none",
+          out: "www/libs/lib.js",
+          //wrap: {
+              //startFile:"./js/start.frag",
+              //endFile:"./js/end.frag"
+          //}
+            wrap:true
         }
       }
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
 
