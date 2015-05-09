@@ -3,7 +3,6 @@
     <head>
         <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
         <script type="text/javascript" src="./libs/require.js"></script>
-        <script type="text/javascript" src="./libs/lib.js"></script>
     </head>
 
     <body>
@@ -12,6 +11,10 @@
     </body>
 
     <script type="text/javascript">
+
+     require.config({
+         baseUrl: "./libs"
+     });
 
      require(["lib"], function(lib) {
          var ma = new lib.modulea();
