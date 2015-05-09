@@ -1,11 +1,15 @@
 <html>
 
     <head>
+        <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
         <script type="text/javascript" src="./libs/require.js"></script>
         <script type="text/javascript" src="./libs/lib.js"></script>
     </head>
 
-    <body></body>
+    <body>
+        <span class="t1">Hello World</span>
+        <span class="t2">Hello World</span>
+    </body>
 
     <script type="text/javascript">
 
@@ -15,6 +19,9 @@
          var mb = new lib.moduleb();
          mb.display();
          console.log("called finished.");
+
+         $('.t1').larger();
+         $('.t2').smaller();
      });
 
     </script>
